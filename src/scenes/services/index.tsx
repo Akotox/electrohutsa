@@ -7,7 +7,7 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import BenefitsPageGraphic from "@/assets/ServicesPageGraphic.png";
+import BenefitsPageGraphic from "@/assets/ServicesPageGraphic.webp";
 import Service from "./Services";
 
 const services: Array<ServiceType> = [

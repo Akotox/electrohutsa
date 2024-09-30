@@ -1,11 +1,11 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import CompleteIT from "@/assets/cit.png";
-import Gommaxx from "@/assets/gm.png";
-import ComputerMania from "@/assets/cm.png";
+import HomePageText from "@/assets/HomePageText.webp";
+import HomePageGraphic from "@/assets/HomePageGraphic.webp";
+import CompleteIT from "@/assets/cit.webp";
+import Gommaxx from "@/assets/gm.webp";
+import ComputerMania from "@/assets/cm.webp";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
