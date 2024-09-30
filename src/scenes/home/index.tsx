@@ -88,19 +88,18 @@ const Home = ({ setSelectedPage }: Props) => {
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-white py-10">
-          <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-between gap-24">
-              <img alt="complete-it-sponsor" src={CompleteIT} />
-              <img alt="gommaxx-sponsor" src={Gommaxx} />
-              <img alt="computer-mania" src={ComputerMania} />
-              <img alt="complete-it-sponsor" src={CompleteIT} />
-              <img alt="gommaxx-sponsor" src={Gommaxx} />
-              <img alt="computer-mania" src={ComputerMania} />
-            </div>
-          </div>
-        </div>
-      )}
+  <div className="h-[150px] w-full bg-white py-10">
+    <div className="mx-auto w-5/6">
+      <div className="flex w-full items-center gap-24 overflow-x-auto justify-between custom-scrollbar pb-10">
+        <img alt="complete-it-sponsor" src={CompleteIT} />
+        <img alt="gommaxx-sponsor" src={Gommaxx} />
+        <img alt="computer-mania" src={ComputerMania} />
+        <img alt="complete-it-sponsor" src={CompleteIT} />
+      </div>
+    </div>
+  </div>
+)}
+
     </section>
   );
 };
