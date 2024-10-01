@@ -40,7 +40,7 @@ const Footer = ({ setSelectedPage }: Props) => {
             <li>Location: <a href="https://www.google.com/search?sca_esv=53e2e05af3debceb&sca_upv=1&rlz=1C1FKPE_enZA1121ZA1121&q=electrohut+sa&source=lnms&fbs=AEQNm0AeMNWKf4PpcKMI-eSa16lJoRPMIuyspCxWO6iZW9F1Ns6EVsgc0W_0xN47PHaanAEtg26fpfc9gg2y1-ZsywNNidIzOA0khSyMN51n7r3LlCN1M2Qvu76xqhq8ZDzUz3QjRfF2HLyV2ldaCxuWbSUHZYxzFFv154NlyEUW1OeFwXcGcSyQr3pVDFp-PfYkJR9qH_De_cBIcEiN4tQKcLlPz-MFxQ&sa=X&ved=2ahUKEwiK-ILsw-qIAxXBUqQEHYJWCNMQ0pQJegQIDRAB&biw=1920&bih=945&dpr=1" className="my-5 text-blue-500 hover:underline">58 Loop Street Cape Town</a></li>
             <li>Phone: <a href="tel:+27634443944" className="my-5 hover:text-blue-500 hover:underline">+27 634 443 944</a></li>
             <li>Email:  <a href="mailto:info@electrohut.co.za" className="my-5 hover:text-blue-500 hover:underline">info@electrohut.co.za</a></li>
-            <li>Website: <a href={`#${SelectedPage.Home}`} className="my-5 hover:text-blue-500 hover:underline">www.electrohutsa.com</a></li>
+            <li>Website: <a href={`#${SelectedPage.Home}`} className="my-5 hover:text-blue-500 hover:underline">www.electrohut.co.za</a></li>
             <li>Hours: Mon to Fri 8:30am - 6pm, Sat: til 2pm</li>
           </ul>
         </div>
