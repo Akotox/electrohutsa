@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SelectedItem } from "@/shared/types";
+import { SelectedItem } from "../../shared/types";
 import { consoles, windows, ipad, iphone, macbook, services, RepairListProps} from '../../shared/types';
 
 const childVariant = {

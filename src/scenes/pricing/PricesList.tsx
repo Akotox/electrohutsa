@@ -1,4 +1,4 @@
-import { SelectedItem } from "@/shared/types";
+import { SelectedItem } from "../../shared/types";
 import {  XMarkIcon } from "@heroicons/react/24/solid";
 import RepairList from "./RepairList";
 import { RepairListProps } from "../../shared/types";

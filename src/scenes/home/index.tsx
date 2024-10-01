@@ -1,6 +1,5 @@
-import useMediaQuery from "@/hooks/useMediaQuery";
-import { SelectedPage } from "@/shared/types";
-import ActionButton from "@/shared/ActionButton";
+import useMediaQuery from "../../hooks/useMediaQuery";
+import { SelectedPage } from "../../shared/types";
 import HomePageText from "@/assets/HomePageText.webp";
 import HomePageGraphic from "@/assets/HomePageGraphic.webp";
 import CompleteIT from "@/assets/cit.webp";
@@ -8,6 +7,7 @@ import Gommaxx from "@/assets/gm.webp";
 import ComputerMania from "@/assets/cm.webp";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import ActionButton from "../../shared/actionbutton";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

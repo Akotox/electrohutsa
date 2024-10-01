@@ -1,6 +1,4 @@
-import ActionButton from "@/shared/ActionButton";
-import { ServiceType, SelectedPage } from "@/shared/types";
-import HText from "@/shared/HText";
+import { ServiceType, SelectedPage } from "../../shared/types";
 import {
   HomeModernIcon,
   UserGroupIcon,
@@ -9,6 +7,8 @@ import {
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/ServicesPageGraphic.webp";
 import Service from "./Services";
+import ActionButton from "../../shared/actionbutton";
+import HText from "../../shared/HText";
 
 const services: Array<ServiceType> = [
   

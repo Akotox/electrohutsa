@@ -1,5 +1,5 @@
-import { PricingType, SelectedPage } from "@/shared/types";
-import HText from "@/shared/HText";
+import { PricingType, SelectedPage } from "../../shared/types";
+import HText from "../../shared/HText";
 import { motion } from "framer-motion";
 import PricingComponent from "./PriceComponent";
 import iPhone from "@/assets/i16.webp";
@@ -8,7 +8,7 @@ import Macbooks from "@/assets/macbooks.webp";
 import iMac from "@/assets/imac.webp";
 import Services from "@/assets/services.webp";
 import Console from "@/assets/console.webp";
-import { SelectedItem } from "@/shared/types";
+import { SelectedItem } from "../../shared/types";
 import {  RepairListProps } from "../../shared/types";
 import { useState } from "react";
 import PriceList from "./PricesList";

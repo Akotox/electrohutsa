@@ -1,11 +1,11 @@
-import Navbar from "@/scenes/navbar";
 import { useState, useEffect } from 'react';
 import { SelectedPage } from "./shared/types";
-import Home from "@/scenes/home";
-import Services from "@/scenes/services";
-import Pricing from "@/scenes/pricing";
-import ContactUs from "@/scenes/contact";
+import Services from "./scenes/services";
+import Pricing from "./scenes/pricing";
+import ContactUs from "./scenes/contact";
 import Footer from "./scenes/footer";
+import Navbar from './scenes/navbar';
+import Home from './scenes/home';
 
 
 
@@ -37,19 +37,16 @@ function App() {
         />
 
       <Home 
-        selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
 
      
 
       <Services 
-        selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
 
       <Pricing 
-        selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
 
