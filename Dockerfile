@@ -1,13 +1,20 @@
+# Use Node.js 20 Alpine image as the base image
 FROM node:20-alpine
 
+# Set working directory
 WORKDIR /app
 
-COPY package.json .
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
 
-RUN npm install
+# Install dependencies
+RUN npm install --only=production
 
+# Copy the rest of the application files
 COPY . .
 
+# Expose the port
 EXPOSE 4444
 
-CMD ["npm", "run preview"]
+# Start the application in preview mode
+CMD ["npm", "run", "preview"]
