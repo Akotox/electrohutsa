@@ -12,6 +12,7 @@ import { SelectedItem } from "../../shared/types";
 import {  RepairListProps } from "../../shared/types";
 import { useState } from "react";
 import PriceList from "./PricesList";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const pricing: Array<PricingType> = [
   {
@@ -60,11 +61,13 @@ const container = {
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
+
 };
 
 const Pricing = ({ setSelectedPage }: Props) => {
   const [selectedItem, setSelectedItem] = useState<SelectedItem>(SelectedItem.None);
   const [data, setData] = useState<RepairListProps[]>([]);
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
  
 
   return (
@@ -88,14 +91,28 @@ const Pricing = ({ setSelectedPage }: Props) => {
           
         </motion.div>
 
-        {/* BENEFITS */}
-        <motion.div
-          className="mt-5 items-center justify-between gap-8 md:flex"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={container}
-        >
+        {isAboveMediumScreens ? (
+           <motion.div
+           className="mt-5 items-center justify-between gap-8 md:flex"
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, amount: 0.5 }}
+           variants={container}
+         >
+           {pricing.map((pricing: PricingType) => (
+             <PricingComponent
+               setData={setData}
+               imageUrl={pricing.imageUrl}
+               key={pricing.title}
+               title={pricing.title}
+               setSelectedItem={setSelectedItem}
+               type= {pricing.type}
+               selectedItem = {selectedItem}
+             />
+           ))}
+         </motion.div>
+        ) :(
+          <div className="mt-5 items-center justify-between gap-8 md:flex">
           {pricing.map((pricing: PricingType) => (
             <PricingComponent
               setData={setData}
@@ -103,11 +120,15 @@ const Pricing = ({ setSelectedPage }: Props) => {
               key={pricing.title}
               title={pricing.title}
               setSelectedItem={setSelectedItem}
-              type= {pricing.type}
-              selectedItem = {selectedItem}
+              type={pricing.type}
+              selectedItem={selectedItem}
             />
           ))}
-        </motion.div>
+        </div>
+        )}
+       
+          
+
 
        {selectedItem !== SelectedItem.None && (
           <PriceList  data={data}  setSelectedItem={setSelectedItem}/>
