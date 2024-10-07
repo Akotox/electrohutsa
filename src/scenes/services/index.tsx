@@ -116,7 +116,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                  MILLIONS OF SATISFIED CUSTOMERS WITH REPAIRED {" "}
+                  THOUSANDS OF SATISFIED CUSTOMERS WITH REPAIRED {" "}
                     <span className="text-primary-500">DEVICES</span>
                   </HText>
                 </motion.div>
@@ -135,7 +135,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5 font-medium">
-              Millions of customers have experienced the quality and reliability of our Apple device repair services. 
+              Thousands of customers have experienced the quality and reliability of our Apple device repair services. 
               Our skilled technicians are dedicated to restoring each device with precision, 
               whether it's a cracked screen or an advanced board-level repair. We prioritize fast,
                top-tier service that meets the highest standards, ensuring your devices are back in action quickly.
