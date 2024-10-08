@@ -108,7 +108,8 @@ export enum SelectedPage {
         { title: "iPhone X/Xr/XS/XS Max/11 series", price: "R999.00" },
         { title: "iPhone 12mini/13mini series", price: "R999.00" },
         { title: "iPhone 12/13 series", price: "R1,499.00" },
-        { title: "iPhone 14/15 series", price: "R1,799.00" },
+        { title: "iPhone 14 series", price: "R1,799.00" },
+  { title: "iPhone 15 series", price: "R1,999.00" },
       ],
     },
     {
