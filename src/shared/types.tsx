@@ -102,7 +102,7 @@ export enum SelectedPage {
 
   export const iphone: RepairListProps[] = [
     {
-      title: "iPhone Rear Reglass",
+      title: "REAR REGLASSES",
       items: [
         { title: "iPhone 8 series", price: "R799.00" },
         { title: "iPhone X/Xr/XS/XS Max/11 series", price: "R999.00" },
@@ -123,7 +123,7 @@ export enum SelectedPage {
       ],
     },
     {
-      title: "NO POWER/BOOTING/NAND",
+      title: "NO POWER/BOOTING",
       items: [
         { title: "iPhone 12/13 / 14 series", price: "R2,499.00" },
         { title: "iPhone 11 series", price: "R1,499.00" },
@@ -170,7 +170,7 @@ export enum SelectedPage {
       ],
     },
     {
-      title: "Baseband / Interposor",
+      title: "INTERPOSER / NAND",
       items: [
         { title: "iPhone 12 series", price: "R2,499.00" },
         { title: "iPhone 13 series", price: "R2,999.00" },
