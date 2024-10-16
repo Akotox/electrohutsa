@@ -56,16 +56,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {/* SERVICE CARDS */}
-      <motion.div
+      <div
         className="mt-5 grid gap-6 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        transition={{ duration: 0.5 }}
+        
       >
         {services.map((service: ServiceType) => (
           <ServicesCard
@@ -75,7 +68,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             description={service.description}
           />
         ))}
-      </motion.div>
+      </div>
     </motion.div>
   </section>
 );
