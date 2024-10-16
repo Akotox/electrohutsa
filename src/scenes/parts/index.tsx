@@ -25,7 +25,7 @@ const Parts = () => {
     },
     {
       title: "Rear Housing",
-      price: "From R299.00",
+      price: "From R599.00",
       imageUrl: "https://myselectel.com/wp-content/uploads/2024/09/front.jpg",
     },
     {
@@ -65,9 +65,9 @@ const Parts = () => {
       },
 
       {
-        title: "Home Button",
-        price: "From 28.99",
-        imageUrl: "https://cdn.webshopapp.com/shops/276833/files/326426680/image.jpg",
+        title: "Wireless Charging",
+        price: "From 799.99",
+        imageUrl: "https://m.media-amazon.com/images/I/71qvVewycfL.jpg",
       },
   ];
 
