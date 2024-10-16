@@ -1,27 +1,31 @@
-import { motion } from "framer-motion";
+import React from 'react';
 
-const childVariant = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-type Props = {
+interface ServicesCardProps {
+  imageUrl: string;
   title: string;
   description: string;
-};
+}
 
-const Services = ({ title, description }: Props) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ imageUrl, title, description }) => {
   return (
-    <motion.div
-      variants={childVariant}
-      className="mt-5 rounded-xl border-2 border-blue-300 px-5 py-16 text-center"
-    >
-
-      <h4 className="font-bold">{title}</h4>
-      <p className="my-3">{description}</p>
-    
-    </motion.div>
+    <div className="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
+      <img className="object-cover h-48 w-full" src={imageUrl} alt={title} />
+      <div className="flex-1 flex flex-col p-6">
+        <div className="flex-1">
+          <header className="mb-2">
+            <h2 className="text-xl font-extrabold leading-snug">
+              <a className="text-slate-900 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300" href="#0">
+                {title}
+              </a>
+            </h2>
+          </header>
+          <div className="text-sm text-slate-600 mb-8">
+            <p>{description}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Services;
+export default ServicesCard;

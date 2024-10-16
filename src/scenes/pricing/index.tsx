@@ -13,6 +13,7 @@ import {  RepairListProps } from "../../shared/types";
 import { useState } from "react";
 import PriceList from "./PricesList";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import Parts from "../parts";
 
 const pricing: Array<PricingType> = [
   {
@@ -135,6 +136,8 @@ const Pricing = ({ setSelectedPage }: Props) => {
        )}
 
       </motion.div>
+
+      <Parts />
       
     </section>
   );

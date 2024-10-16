@@ -2,12 +2,10 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import { SelectedPage } from "../../shared/types";
 import HomePageText from "@/assets/HomePageText.webp";
 import HomePageGraphic from "@/assets/HomePageGraphic.webp";
-import CompleteIT from "@/assets/cit.webp";
-import Gommaxx from "@/assets/gm.webp";
-import ComputerMania from "@/assets/cm.webp";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import ActionButton from "../../shared/actionbutton";
+import LogoCarousel from "./LogCarousel";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -90,12 +88,7 @@ const Home = ({ setSelectedPage }: Props) => {
       {isAboveMediumScreens && (
   <div className="h-[150px] w-full bg-white py-10">
     <div className="mx-auto w-5/6">
-      <div className="flex w-full items-center gap-24 overflow-x-auto justify-between custom-scrollbar pb-10">
-        <img alt="complete-it-sponsor" src={CompleteIT} />
-        <img alt="gommaxx-sponsor" src={Gommaxx} />
-        <img alt="computer-mania" src={ComputerMania} />
-        <img alt="complete-it-sponsor" src={CompleteIT} />
-      </div>
+      <LogoCarousel />
     </div>
   </div>
 )}
