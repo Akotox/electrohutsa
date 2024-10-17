@@ -26,7 +26,7 @@ const Parts = () => {
     {
       title: "Rear Housing",
       price: "From R599.00",
-      imageUrl: "https://myselectel.com/wp-content/uploads/2024/09/front.jpg",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g6nT1a9ba3Vd7JlV_oXakXw54fd62IUaND4YTw4CTnMLDyz3COCOGKhq&s=10",
     },
     {
       title: "Front Cameras",
