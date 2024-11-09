@@ -59,21 +59,22 @@ export enum SelectedPage {
   export const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: "Listen",
-      phone: "+27634443944",
-      image: "https://media.licdn.com/dms/image/v2/C4E03AQHyG_6DaLMxeg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619253458093?e=1736380800&v=beta&t=p3LOrU4Cl-oj_YOxByNhbq3iX5X1OPL8DsablxbEFxo", // Update with the actual image path
-    },
-    {
-      id: 2,
       name: "Abrahamson",
       phone: "+27815153706",
       image: "https://firebasestorage.googleapis.com/v0/b/electro-523c1.appspot.com/o/4381c349-27d8-44e7-ac57-bc804f8b9a1e.JPG?alt=media&token=fe4ae145-eab3-4be7-8854-66f5cd581570", // Update with the actual image path
     },
     {
+      id: 2,
+      name: "Listen",
+      phone: "+27634443944",
+      image: "https://media.licdn.com/dms/image/v2/C4E03AQHyG_6DaLMxeg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619253458093?e=1736380800&v=beta&t=p3LOrU4Cl-oj_YOxByNhbq3iX5X1OPL8DsablxbEFxo", // Update with the actual image path
+    },
+   
+    {
       id: 3,
-      name: "Adielah",
-      phone: "+27713332222",
-      image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=", // Update with the actual image path
+      name: "Andre",
+      phone: "+27631192050",
+      image: "https://firebasestorage.googleapis.com/v0/b/electro-523c1.appspot.com/o/Passport%20photo.jpg?alt=media&token=d1ac5bb6-8820-4031-b9bd-d205c050a00a", // Update with the actual image path
     },
   ];  
   
