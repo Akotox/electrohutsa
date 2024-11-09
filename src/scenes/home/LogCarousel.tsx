@@ -3,9 +3,9 @@ import CompleteIT from "@/assets/cit.webp";
 import Gommaxx from "@/assets/gm.webp";
 import ComputerMania from "@/assets/cm.webp";
 const logos = [
-  { src: CompleteIT, alt: "Facebook" },
-  { src: Gommaxx, alt: "Disney" },
-  { src: ComputerMania, alt: "Airbnb" },
+  { src: CompleteIT, alt: "Facebook", link: "https://www.horizondevelopers.co.za/"},
+  { src: Gommaxx, alt: "Disney", link: "https://www.horizondevelopers.co.za/"},
+  { src: ComputerMania, alt: "Airbnb", link: "https://www.horizondevelopers.co.za/" },
   
 ];
 
@@ -30,7 +30,10 @@ const LogoCarousel: React.FC = () => {
       >
         {logos.map((logo, index) => (
           <li key={index}>
+            <a href={logo.link}>
             <img src={logo.src} alt={logo.alt} />
+
+            </a>
           </li>
         ))}
       </ul>

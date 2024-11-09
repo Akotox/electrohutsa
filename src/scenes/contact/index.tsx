@@ -1,5 +1,4 @@
-import { useForm } from "react-hook-form";
-import { SelectedPage } from "../../shared/types";
+import { SelectedPage, teamMembers } from "../../shared/types";
 import { motion } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.webp";
 import HText from "../../shared/HText";
@@ -9,28 +8,12 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyles = `mb-5 w-full rounded-lg bg-gray-300
-  px-5 py-3 placeholder-white`;
-
-  const {
-    register,
-    trigger,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = async (e: any) => {
-    const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
-    }
-  };
 
   return (
     <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
-        {/* HEADER */}
         <motion.div
           className="md:w-3/5"
           initial="hidden"
@@ -43,12 +26,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">FEEL FREE</span> TO CONTACT US
+            <span className="text-primary-500">MEET OUR</span> TEAM
           </HText>
           <p className="my-5">
-          Feel free to reach out to us for any questions or assistance with your Apple devices. Whether you need a quick repair, diagnostics, or just want to learn more about our services, we're here to help!
+            Get in touch with our dedicated team members for any inquiries or support. We are here to assist you with your Apple device needs!
           </p>
         </motion.div>
+
+      
 
         {/* FORM AND IMAGE */}
         <div className="mt-10 justify-between gap-8 md:flex">
@@ -63,72 +48,35 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <form
-              target="_blank"
-              onSubmit={onSubmit}
-              action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
-              method="POST"
+            <div className="mt-10 flex flex-wrap justify-between gap-8">
+          {teamMembers.map((member) => (
+            <motion.div
+              key={member.id}
+              className="flex flex-col items-center basis-1/3 md:basis-1/4"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
             >
-              <input
-                className={inputStyles}
-                type="text"
-                placeholder="NAME"
-                {...register("name", {
-                  required: true,
-                  maxLength: 100,
-                })}
-              />
-              {errors.name && (
-                <p className="mt-1 text-primary-500">
-                  {errors.name.type === "required" && "This field is required."}
-                  {errors.name.type === "maxLength" &&
-                    "Max length is 100 char."}
-                </p>
-              )}
+              <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="mt-4 text-lg font-semibold">{member.name}</h3>
+              <a href={`https://wa.me/${member.phone}`}>
+              <p className="text-primary-500">{member.phone}</p>
 
-              <input
-                className={inputStyles}
-                type="text"
-                placeholder="EMAIL"
-                {...register("email", {
-                  required: true,
-                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                })}
-              />
-              {errors.email && (
-                <p className="mt-1 text-primary-500">
-                  {errors.email.type === "required" &&
-                    "This field is required."}
-                  {errors.email.type === "pattern" && "Invalid email address."}
-                </p>
-              )}
-
-              <textarea
-                className={inputStyles}
-                placeholder="MESSAGE"
-                rows={4}
-                cols={50}
-                {...register("message", {
-                  required: true,
-                  maxLength: 2000,
-                })}
-              />
-              {errors.message && (
-                <p className="mt-1 text-primary-500">
-                  {errors.message.type === "required" &&
-                    "This field is required."}
-                  {errors.message.type === "maxLength" &&
-                    "Max length is 2000 char."}
-                </p>
-              )}
-
-              <button
-                type="submit"
-                className="mt-5 rounded-lg bg-primary-500 px-20 py-3 transition duration-500 text-white hover:text-secondary-500"
-              >
-                SUBMIT
-              </button>
-            </form>
+              </a>
+            </motion.div>
+          ))}
+        </div>
           </motion.div>
 
           <motion.div
