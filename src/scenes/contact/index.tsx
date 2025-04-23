@@ -32,7 +32,7 @@ const teamMembers = [
       {
         image: "https://res.cloudinary.com/derwdq9ut/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1745445920/fzzdcx4zqg4uvfm1qv7q.jpg",
         name: "Abrahamson",
-        role: "Tech Department",
+        role: "Tech Manager",
         phone: "+27815153706",
         socialLinks: [
           
@@ -60,7 +60,7 @@ const teamMembers = [
 
       {
         image: "https://res.cloudinary.com/derwdq9ut/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1745445919/oqvapzothauqfmmer4cs.jpg",
-        name: "Micheil",
+        name: "Micheal",
         role: "Sales Department",
         phone: "+27769050716",
         socialLinks: [
@@ -71,7 +71,7 @@ const teamMembers = [
 
       {
         image: "https://res.cloudinary.com/derwdq9ut/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1745445920/ahnj36pdktuyonkcqhef.jpg",
-        name: "Khanyiso Xhaya",
+        name: "Khanyiso",
         role: "Sales Department",
         phone: "+27780077851",
         socialLinks: [
